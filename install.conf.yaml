@@ -15,6 +15,10 @@
     # Editors:
     ~/.editorconfig: .config/.editorconfig
 
+    # Git:
+    ~/.gitconfig: .config/.gitconfig
+    ~/.gitignore_global: .config/.gitignore
+
     # Starship:
     ~/.config/starship.toml: .config/starship.toml
 
