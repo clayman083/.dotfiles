@@ -11,6 +11,10 @@
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
 
+- link:
+    ~/.editorconfig: .config/.editorconfig
+
+
 # Installing dependencies:
 - brewfile:
     file: Brewfile
