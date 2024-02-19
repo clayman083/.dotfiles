@@ -1,0 +1,21 @@
+- defaults:
+    link:
+      relink: true
+    brewfile:
+      stdout: false
+      stderr: false
+      include: ['tap', 'brew', 'cask', 'mas']
+
+- clean: ['~']
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+
+# Installing dependencies:
+- brewfile:
+    file: Brewfile
+    no-upgrade: true
+
+# Cleaning up:
+- shell:
+  - [brew cleanup, Cleaning up]
