@@ -1,9 +1,9 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = '''
-[┌───────────────────>](bold green) $username$hostname$time
+[┌──────────>](bold green) $username$hostname$time
 [│](bold green) $directory$package$rust$python$helmi$direnv$git_branch$git_commit$git_state$git_metrics$git_statusv
-[└─>](bold green) '''
+[└──>](bold green) '''
 
 # Inserts a blank line between shell prompts
 add_newline = true
@@ -42,3 +42,6 @@ disabled = false
 format = 'at [$time]($style) '
 time_format = '%T'
 utc_time_offset = '+5'
+
+[python]
+python_binary = ['./.venv/bin/python', 'python3']
