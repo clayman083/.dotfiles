@@ -19,6 +19,10 @@
     ~/.gitconfig: .config/.gitconfig
     ~/.gitignore_global: .config/.gitignore
 
+    # ZSH:
+    ~/.zshrc: .config/.zshrc
+    ~/.oh-my-zsh/custom/themes/honukai.zsh-theme: .config/honukai.theme
+
     # Starship:
     ~/.config/starship.toml: .config/starship.toml
 
