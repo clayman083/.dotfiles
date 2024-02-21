@@ -8,7 +8,7 @@
         "revision": "16aa7909152e49d7016c8811d98cf70c83d46cb0"
       },
       "homebrew/cask-versions": {
-        "revision": "6505ce9f25e988308cc53e00dc1770e88697ae56"
+        "revision": "62e9ac378b451487454578fd427bb455b346711d"
       },
       "homebrew/bundle": {
         "revision": "d3cf1e126dc4686e75c9b3013caf08558aba241c"
@@ -840,7 +840,7 @@
         }
       },
       "firefox": {
-        "version": "122.0.1",
+        "version": "123.0",
         "options": {
           "full_name": "firefox"
         }
@@ -906,7 +906,7 @@
   "system": {
     "macos": {
       "sonoma": {
-        "HOMEBREW_VERSION": "4.2.9-44-g7abeca1",
+        "HOMEBREW_VERSION": "4.2.9-58-g8b977ce",
         "HOMEBREW_PREFIX": "/opt/homebrew",
         "Homebrew/homebrew-core": "api",
         "CLT": "15.1.0.0.1.1700200546",

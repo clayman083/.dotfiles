@@ -1,0 +1,167 @@
+{
+  "breadcrumbs.enabled": true,
+
+  "diffEditor.ignoreTrimWhitespace": false,
+
+  "editor.accessibilitySupport": "off",
+  "editor.codeLens": true,
+  "editor.colorDecorators": true,
+  "editor.cursorSurroundingLines": 3,
+  "editor.dragAndDrop": false,
+  "editor.folding": true,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 12,
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": false,
+  "editor.glyphMargin": true,
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "boundary",
+  "editor.rulers": [120],
+  "editor.scrollBeyondLastLine": false,
+  "editor.snippetSuggestions": "inline",
+  "editor.tabCompletion": "on",
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "editor.useTabStops": false,
+  "editor.wordWrap": "off",
+  "editor.wordWrapColumn": 80,
+
+  "explorer.confirmDelete": false,
+  "explorer.decorations.badges": false,
+
+  "extensions.ignoreRecommendations": true,
+
+  "files.autoSave": "onFocusChange",
+  "files.exclude": {
+    ".cache": true,
+    ".vscode": true,
+    "**/__pycache__": true,
+    "**/.cache": true,
+    "**/.coverage": true,
+    "**/.devspace": true,
+    "**/.DS_Store": true,
+    "**/.mypy_cache": true,
+    "**/.pytest_cache": true,
+    "**/.ruff_cache": true,
+    "**/.tox": true,
+    "**/.venv": true,
+    "**/*.egg-info": true,
+    "**/*.py[co]": true,
+    "**/*.retry": true,
+    "**/coverage*": true,
+    "**/dist": true,
+    "**/htmlcov": true,
+    "**/node_modules": true,
+    "**/pip-wheel-metadata": true
+  },
+  "files.watcherExclude": {
+    "**/.devspace": true,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/dist/**": true,
+    "**/node_modules": true,
+    "**/node_modules/**": true,
+    "**/tmp/**": true
+  },
+  "files.associations": {
+    ".babelrc": "jsonc",
+    ".eslintrc": "jsonc",
+    "*.pyi": "python",
+    "**/*ansible*/**/*.yml": "ansible",
+    "**/defaults/**/*": "ansible",
+    "**/handler/*.yml": "ansible",
+    "**/inventory/*/*": "ansible",
+    "**/playbooks/**/*.yml": "ansible",
+    "**/roles/**/*.yml": "ansible",
+    "**/tasks/**/*.yml": "ansible",
+    "**/vars/**/*.yml": "ansible",
+    "**/*_vars/**/*.yml": "ansible",
+    "Makefile": "makefile"
+  },
+
+  "search.exclude": {
+    "**/.devspace": true,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/bower_components": true,
+    "**/dist/**": true,
+    "**/node_modules": true,
+    "**/node_modules/**": true,
+    "**/tmp/**": true
+  },
+
+  "git.autofetch": true,
+  "git.showInlineOpenFileAction": false,
+  "git.openRepositoryInParentFolders": "never",
+  "git.ignoreMissingGitWarning": true,
+
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+  },
+
+  "scm.defaultViewMode": "tree",
+
+  "terminal.integrated.enableBell": true,
+
+  "remote.SSH.defaultExtensions": [
+    // Common
+    "eamodio.gitlens",
+    "editorconfig.editorconfig",
+    "tamasfe.even-better-toml",
+    "redhat.vscode-yaml",
+    // Python development
+    "ms-python.python",
+    "ms-python.mypy-type-checker",
+    "ms-python.vscode-pylance",
+    "cameron.vscode-pytest",
+    "charliermarsh.ruff",
+    // Protobuf
+    "zxh404.vscode-proto3"
+  ],
+
+  "window.newWindowDimensions": "maximized",
+  "window.restoreWindows": "none",
+
+  "workbench.colorTheme": "Horizon",
+  "workbench.editor.enablePreview": true,
+  "workbench.editor.labelFormat": "short",
+  "workbench.iconTheme": "vscode-great-icons",
+  "workbench.sideBar.location": "left",
+  "workbench.statusBar.visible": true,
+  "workbench.tips.enabled": false,
+  "workbench.tree.renderIndentGuides": "none",
+
+  "redhat.telemetry.enabled": true,
+
+  "python.formatting.provider": "none",
+  "python.languageServer": "Pylance",
+  "python.linting.enabled": false,
+  "python.linting.pylintEnabled": false,
+  "python.terminal.activateEnvironment": false,
+
+  "[yaml]": {
+    "editor.autoIndent": "none",
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+
+  "[makefile]": {
+    "editor.insertSpaces": false
+  },
+
+  "[python]": {
+    "editor.formatOnSave": true
+  }
+}

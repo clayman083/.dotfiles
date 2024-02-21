@@ -26,6 +26,15 @@
     # Starship:
     ~/.config/starship.toml: .config/starship.toml
 
+# Setting up vscode:
+- link:
+    # vscode:
+    "~/Library/Application Support/Code/User/settings.json":
+        path: vscode/settings.json
+        create: true
+
+- shell:
+  - [bash ./vscode/install.sh, Installing vscode extensions]
 
 # Installing dependencies:
 - brewfile:
