@@ -110,8 +110,6 @@
 
   "scm.defaultViewMode": "tree",
 
-  "terminal.integrated.enableBell": true,
-
   "remote.SSH.defaultExtensions": [
     // Common
     "eamodio.gitlens",
@@ -131,7 +129,7 @@
   "window.newWindowDimensions": "maximized",
   "window.restoreWindows": "none",
 
-  "workbench.colorTheme": "Horizon",
+  "workbench.colorTheme": "Catppuccin Frappé",
   "workbench.editor.enablePreview": true,
   "workbench.editor.labelFormat": "short",
   "workbench.iconTheme": "vscode-great-icons",

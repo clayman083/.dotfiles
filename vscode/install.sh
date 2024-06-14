@@ -1,8 +1,10 @@
 # Common
 code --install-extension editorconfig.editorconfig
 code --install-extension tamasfe.even-better-toml
+code --install-extension vscodevim.vim
 
 # Themes
+code --install-extension Catppuccin.catppuccin-vsc
 code --install-extension jolaleye.horizon-theme-vscode
 code --install-extension emmanuelbeziat.vscode-great-icons
 

@@ -22,13 +22,13 @@ brew "tmux"
 brew "vim"
 brew "zsh-autosuggestions"
 
-cask "alfred"
 cask "firefox"
 cask "font-fira-code"
 cask "iterm2"
 cask "lens"
 cask "maccy"
 cask "obsidian"
+cask "raycast"
 cask "rectangle"
 cask "telegram"
 cask "visual-studio-code"
@@ -36,3 +36,4 @@ cask "visual-studio-code"
 mas "Amphetamine", id: 937984704
 mas "Monosnap", id: 540348655
 mas "The Unarchiver", id: 425424353
+mas "Nautik for Kubernetes", id: 1672838783
