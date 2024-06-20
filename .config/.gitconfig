@@ -1,5 +1,6 @@
 [core]
   excludesfile = ~/.gitignore_global
+	pager = cat
 
 [pager]
   branch = false
