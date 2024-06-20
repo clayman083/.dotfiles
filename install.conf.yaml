@@ -11,6 +11,11 @@
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
 
+- brewfile:
+    file: Brewfile
+    no-upgrade: true
+    stdout: true
+
 - link:
     # Editors:
     ~/.editorconfig: .config/.editorconfig
@@ -35,11 +40,6 @@
 
 - shell:
   - [bash ./vscode/install.sh, Installing vscode extensions]
-
-# Installing dependencies:
-- brewfile:
-    file: Brewfile
-    no-upgrade: true
 
 # Cleaning up:
 - shell:
