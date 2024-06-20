@@ -1,6 +1,7 @@
 # Common
 code --install-extension editorconfig.editorconfig
 code --install-extension tamasfe.even-better-toml
+code --install-extension vscodevim.vim
 
 # Themes
 code --install-extension alexandernanberg.horizon-theme-vscode
