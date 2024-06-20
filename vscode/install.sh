@@ -3,7 +3,8 @@ code --install-extension editorconfig.editorconfig
 code --install-extension tamasfe.even-better-toml
 
 # Themes
-code --install-extension jolaleye.horizon-theme-vscode
+code --install-extension alexandernanberg.horizon-theme-vscode
+code --install-extension Catppuccin.catppuccin-vsc
 code --install-extension emmanuelbeziat.vscode-great-icons
 
 # Tools
