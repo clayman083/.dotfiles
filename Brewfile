@@ -23,6 +23,7 @@ brew "sqlite"
 brew "starship"
 brew "tmux"
 brew "zsh-autosuggestions"
+brew "uv"
 
 cask "firefox"
 cask "font-fira-code"

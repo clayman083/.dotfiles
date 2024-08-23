@@ -11,7 +11,7 @@
         "revision": "3f7a516500aa899996433e408bf630b7185dcc8a"
       },
       "homebrew/bundle": {
-        "revision": "6b32c84c4a1f66429fbb21305c7844524d9ff5bf"
+        "revision": "daee6f1442cc86a7fa340da6112b1b8fe73385c5"
       }
     },
     "brew": {
@@ -1080,6 +1080,50 @@
             }
           }
         }
+      },
+      "uv": {
+        "version": "0.3.1",
+        "bottle": {
+          "rebuild": 0,
+          "root_url": "https://ghcr.io/v2/homebrew/core",
+          "files": {
+            "arm64_sonoma": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/uv/blobs/sha256:c44de63c6b70b510242c3e8aeefcf4c81045584297064a36d2540dcd851070f1",
+              "sha256": "c44de63c6b70b510242c3e8aeefcf4c81045584297064a36d2540dcd851070f1"
+            },
+            "arm64_ventura": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/uv/blobs/sha256:c706635c4c48066ee3043ad6c50ab2172f1e04a7b02bf1e3b53c99d31ca4460e",
+              "sha256": "c706635c4c48066ee3043ad6c50ab2172f1e04a7b02bf1e3b53c99d31ca4460e"
+            },
+            "arm64_monterey": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/uv/blobs/sha256:f5c4c08bb30b85d97dbe53e8b3924b57c94dd2b2dccee1342a26f1603d57c66b",
+              "sha256": "f5c4c08bb30b85d97dbe53e8b3924b57c94dd2b2dccee1342a26f1603d57c66b"
+            },
+            "sonoma": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/uv/blobs/sha256:4c8f4b7302065b7089c9bfe52047c01a829f9b2e78dcfe40659e9d7afc31e6ab",
+              "sha256": "4c8f4b7302065b7089c9bfe52047c01a829f9b2e78dcfe40659e9d7afc31e6ab"
+            },
+            "ventura": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/uv/blobs/sha256:debdfbdf3276de78fff79dc9db8a2d2cfead0ae9a43abc0f3ffdda8e18ca4a80",
+              "sha256": "debdfbdf3276de78fff79dc9db8a2d2cfead0ae9a43abc0f3ffdda8e18ca4a80"
+            },
+            "monterey": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/uv/blobs/sha256:24780081838655714f8fbcf3995c5aa6675f14eb44713945d273e45b5eaa5297",
+              "sha256": "24780081838655714f8fbcf3995c5aa6675f14eb44713945d273e45b5eaa5297"
+            },
+            "x86_64_linux": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/uv/blobs/sha256:5ec436bbc1716be9e494d30f6b5da37f81b6fd52d9abda40d1d6b7d024dfc486",
+              "sha256": "5ec436bbc1716be9e494d30f6b5da37f81b6fd52d9abda40d1d6b7d024dfc486"
+            }
+          }
+        }
       }
     },
     "cask": {
@@ -1156,7 +1200,7 @@
         }
       },
       "zed": {
-        "version": "0.149.3",
+        "version": "0.149.5",
         "options": {
           "full_name": "zed"
         }
