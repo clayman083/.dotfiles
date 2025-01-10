@@ -4,12 +4,12 @@
     brewfile:
       stdout: false
       stderr: false
-      include: ['tap', 'brew', 'cask', 'mas']
+      include: ["tap", "brew", "cask", "mas"]
 
-- clean: ['~']
+- clean: ["~"]
 
 - shell:
-  - [git submodule update --init --recursive, Installing submodules]
+    - [git submodule update --init --recursive, Installing submodules]
 
 - brewfile:
     file: Brewfile
@@ -31,16 +31,21 @@
     # Starship:
     ~/.config/starship.toml: .config/starship.toml
 
+    # Zed:
+    ~/.config/zed/settings.json:
+      path: zed/settings.json
+      create: true
+
 # Setting up vscode:
 - link:
     # vscode:
     "~/Library/Application Support/Code/User/settings.json":
-        path: vscode/settings.json
-        create: true
+      path: vscode/settings.json
+      create: true
 
 - shell:
-  - [bash ./vscode/install.sh, Installing vscode extensions]
+    - [bash ./vscode/install.sh, Installing vscode extensions]
 
 # Cleaning up:
 - shell:
-  - [brew cleanup, Cleaning up]
+    - [brew cleanup, Cleaning up]

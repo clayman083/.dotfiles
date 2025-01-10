@@ -1,0 +1,140 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "theme": "Catppuccin Macchiato",
+  "vim_mode": true,
+  "ui_font_size": 16,
+  "buffer_font_size": 14,
+  "autosave": "off",
+  "load_direnv": "shell_hook",
+  "current_line_highlight": "all",
+  "tabs": {
+    "close_position": "right",
+    "file_icons": true,
+    "git_status": true
+  },
+  "toolbar": {
+    "breadcrumbs": true,
+    "quick_actions": true
+  },
+  "format_on_save": "on",
+  "git": {
+    "git_gutter": "tracked_files",
+    "inline_blame": {
+      "enabled": true
+    }
+  },
+  "languages": {
+    "Python": {
+      "indent_guides": {
+        "enabled": true
+      },
+      "preferred_line_length": 88,
+      "soft_wrap": "preferred_line_length",
+      "language_servers": ["pyright", "ruff"],
+      "formatter": {
+        "external": {
+          "command": "bash",
+          "arguments": [
+            "-c",
+            "./.venv/bin/ruff check --select I --exit-zero --fix --stdin-filename {buffer_path} | ./.venv/bin/ruff format --stdin-filename {buffer_path}"
+          ]
+        }
+      },
+      "format_on_save": "on"
+    }
+  },
+  "indent_guides": {
+    "enabled": true,
+    "coloring": "indent_aware"
+  },
+  "soft_wrap": "preferred_line_length",
+  "preferred_line_length": 120,
+  "project_panel": {
+    "button": true,
+    "dock": "left",
+    "git_status": true
+  },
+  "file_scan_exclusions": [
+    "**/.coverage",
+    "**/.git",
+    "**/.mypy_cache",
+    "**/.pytest_cache",
+    "**/.ruff_cache",
+    "**/__pycache__",
+    "**/coverage",
+    ".devspace",
+    ".pdm-build",
+    ".tox",
+    ".venv/**",
+    ".vscode/**",
+    "build/**",
+    "dist/**"
+  ],
+  "file_types": {
+    "Ansible": [
+      "**.ansible.yml",
+      "**/defaults/**.yaml",
+      "**/defaults/**.yml",
+      "**/group_vars/**.yaml",
+      "**/group_vars/**.yml",
+      "**/handlers/*.yaml",
+      "**/handlers/*.yml",
+      "**/meta/**.yaml",
+      "**/meta/**.yml",
+      "**/playbooks/**.yaml",
+      "**/playbooks/**.yml",
+      "**/tasks/**.yml",
+      "**/tasks/*.yaml",
+      "**/tasks/*.yml",
+      "**playbook*.yaml",
+      "**playbook*.yml"
+    ],
+    "Helm": [
+      "**/helmfile.d/**/*.yaml",
+      "**/helmfile.d/**/*.yml",
+      "**/templates/**/*.tpl",
+      "**/templates/**/*.yaml",
+      "**/templates/**/*.yml"
+    ]
+  },
+  "lsp": {
+    // "ansible-language-server": {
+    //   "settings": {
+    //     "ansible": {
+    //       "path": "./.venv/bin/ansible"
+    //     },
+    //     "executionEnvironment": {
+    //       "enabled": false
+    //     },
+    //     "python": {
+    //       "interpreterPath": "./.venv/bin/python3"
+    //     },
+    //     "validation": {
+    //       "enabled": true,
+    //       "lint": {
+    //         "enabled": true,
+    //         "path": "./.venv/bin/ansible-lint"
+    //       }
+    //     }
+    //   }
+    // },
+    "pyright": {
+      "settings": {
+        "python.analysis": {
+          "diagnosticMode": "workspace",
+          "typeCheckingMode": "strict"
+        },
+        "python": {
+          "pythonPath": ".venv/bin/python"
+        }
+      }
+    }
+  }
+}
