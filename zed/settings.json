@@ -62,20 +62,23 @@
     "git_status": true
   },
   "file_scan_exclusions": [
+    "**/*.egg-info",
     "**/.coverage",
     "**/.git",
     "**/.mypy_cache",
     "**/.pytest_cache",
     "**/.ruff_cache",
     "**/__pycache__",
+    "**/build/**",
     "**/coverage",
+    "**/dist/**",
+    "**/target/**",
+    ".DS_Store",
     ".devspace",
     ".pdm-build",
     ".tox",
-    ".venv/**",
-    ".vscode/**",
-    "build/**",
-    "dist/**"
+    "**/.venv"
+    // ".vscode/**"
   ],
   "file_types": {
     "Ansible": [
@@ -105,34 +108,40 @@
     ]
   },
   "lsp": {
-    // "ansible-language-server": {
-    //   "settings": {
-    //     "ansible": {
-    //       "path": "./.venv/bin/ansible"
-    //     },
-    //     "executionEnvironment": {
-    //       "enabled": false
-    //     },
-    //     "python": {
-    //       "interpreterPath": "./.venv/bin/python3"
-    //     },
-    //     "validation": {
-    //       "enabled": true,
-    //       "lint": {
-    //         "enabled": true,
-    //         "path": "./.venv/bin/ansible-lint"
-    //       }
-    //     }
-    //   }
-    // },
+    "protobuf-language-server": {
+      "binary": {
+        "path": "/Users/clayman/.cargo/bin/protols"
+      }
+    },
+    "rust-analyzer": {
+      "initialization_options": {
+        "cargo": {
+          "features": "all"
+        },
+        "rust": {
+          "analyzerTargetDir": true
+        },
+        "inlayHints": {
+          "maxLength": null,
+          "lifetimeElisionHints": {
+            "enable": "skip_trivial",
+            "useParameterNames": true
+          },
+          "closureReturnTypeHints": {
+            "enable": "always"
+          }
+        }
+      },
+      "binary": {
+        "path": "/opt/homebrew/opt/rustup/bin/rust-analyzer"
+      }
+    },
     "pyright": {
       "settings": {
         "python.analysis": {
           "diagnosticMode": "workspace",
-          "typeCheckingMode": "strict"
-        },
-        "python": {
-          "pythonPath": ".venv/bin/python"
+          "typeCheckingMode": "strict",
+          "extraPaths": [".venv/lib/python3.13"]
         }
       }
     }
