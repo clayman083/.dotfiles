@@ -11,6 +11,9 @@
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
 
+- shell:
+    - [bash ./bootstrap.sh, Bootstraping developer environment]
+
 - brewfile:
     file: Brewfile
     no-upgrade: true
