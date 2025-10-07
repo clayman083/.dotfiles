@@ -51,7 +51,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(docker direnv git git-flow httpie history per-directory-history python ssh-agent kubectl helm)
+plugins=(direnv git git-flow httpie history per-directory-history python ssh-agent kubectl helm)
 
 source $ZSH/oh-my-zsh.sh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
