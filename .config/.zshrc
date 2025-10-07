@@ -72,9 +72,9 @@ eval "$(starship init zsh)"
 
 # Kubectl aliases
 alias k="kubectl"
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 alias vim="hx"
 
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
-
+source ~/.env
 source ~/.profile
