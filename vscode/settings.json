@@ -53,7 +53,8 @@
     "**/dist": true,
     "**/htmlcov": true,
     "**/node_modules": true,
-    "**/pip-wheel-metadata": true
+    "**/pip-wheel-metadata": true,
+    "**/target": true
   },
   "files.watcherExclude": {
     "**/.devspace": true,
