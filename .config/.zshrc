@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:/opt/homebrew/sbin:/opt/homebrew/bin:$PATH
+export PATH=$HOME/.cargo/bin:$HOME/bin:/usr/local/bin:/opt/homebrew/sbin:/opt/homebrew/bin:/opt/homebrew/opt/rustup/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/clayman/.oh-my-zsh
