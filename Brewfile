@@ -46,3 +46,4 @@ cask "zed"
 
 mas "Amphetamine", id: 937984704
 mas "The Unarchiver", id: 425424353
+mas "Mattermost", id: 1614666244
