@@ -78,3 +78,5 @@ alias vim="hx"
 
 source ~/.env
 source ~/.profile
+
+export GPG_TTY=$(tty)
