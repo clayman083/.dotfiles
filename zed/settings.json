@@ -7,33 +7,55 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "theme": "Catppuccin Macchiato",
-  "vim_mode": true,
+  "git_panel": {
+    "tree_view": true,
+    "dock": "right",
+  },
+  "edit_predictions": {
+    "mode": "eager",
+    "copilot": {
+      "proxy": null,
+      "proxy_no_verify": null,
+    },
+    "enabled_in_text_threads": false,
+  },
+  "features": {
+    "edit_prediction_provider": "zed",
+  },
+
+  "theme": "Catppuccin Frappé",
   "ui_font_size": 16,
   "buffer_font_size": 14,
+
+  "vim_mode": true,
   "autosave": "off",
+
   "load_direnv": "shell_hook",
+
   "current_line_highlight": "all",
+
   "tabs": {
     "close_position": "right",
     "file_icons": true,
-    "git_status": true
+    "git_status": true,
   },
-  "toolbar": {
-    "breadcrumbs": true,
-    "quick_actions": true
-  },
+
   "format_on_save": "on",
+
   "git": {
     "git_gutter": "tracked_files",
     "inline_blame": {
-      "enabled": true
-    }
+      "enabled": true,
+    },
   },
+
   "languages": {
+    "YAML": {
+      "format_on_save": "off",
+    },
     "Python": {
       "indent_guides": {
-        "enabled": true
+        "enabled": true,
       },
       "preferred_line_length": 88,
       "soft_wrap": "preferred_line_length",
@@ -43,26 +65,31 @@
           "command": "bash",
           "arguments": [
             "-c",
-            "./.venv/bin/ruff check --select I --exit-zero --fix --stdin-filename {buffer_path} | ./.venv/bin/ruff format --stdin-filename {buffer_path}"
-          ]
-        }
+            "./.venv/bin/ruff check --select I --exit-zero --fix --stdin-filename {buffer_path} | ./.venv/bin/ruff format --stdin-filename {buffer_path}",
+          ],
+        },
       },
-      "format_on_save": "on"
-    }
+      "format_on_save": "on",
+    },
   },
+
   "indent_guides": {
     "enabled": true,
-    "coloring": "indent_aware"
+    "coloring": "indent_aware",
   },
+
   "soft_wrap": "preferred_line_length",
   "preferred_line_length": 120,
+
   "project_panel": {
     "button": true,
-    "dock": "left",
-    "git_status": true
+    "dock": "right",
+    "git_status": true,
   },
+
   "file_scan_exclusions": [
     "**/*.egg-info",
+    "**/.ansible",
     "**/.coverage",
     "**/.git",
     "**/.mypy_cache",
@@ -77,7 +104,7 @@
     ".devspace",
     ".pdm-build",
     ".tox",
-    "**/.venv"
+    "**/.venv",
     // ".vscode/**"
   ],
   "file_types": {
@@ -97,53 +124,51 @@
       "**/tasks/*.yaml",
       "**/tasks/*.yml",
       "**playbook*.yaml",
-      "**playbook*.yml"
+      "**playbook*.yml",
     ],
     "Helm": [
       "**/helmfile.d/**/*.yaml",
       "**/helmfile.d/**/*.yml",
       "**/templates/**/*.tpl",
       "**/templates/**/*.yaml",
-      "**/templates/**/*.yml"
-    ]
+      "**/templates/**/*.yml",
+    ],
+  },
+  "debugger": {
+    "dock": "right",
   },
   "lsp": {
-    "protobuf-language-server": {
-      "binary": {
-        "path": "/Users/clayman/.cargo/bin/protols"
-      }
-    },
     "rust-analyzer": {
       "initialization_options": {
         "cargo": {
-          "features": "all"
+          "features": "all",
         },
         "rust": {
-          "analyzerTargetDir": true
+          "analyzerTargetDir": true,
         },
         "inlayHints": {
           "maxLength": null,
           "lifetimeElisionHints": {
             "enable": "skip_trivial",
-            "useParameterNames": true
+            "useParameterNames": true,
           },
           "closureReturnTypeHints": {
-            "enable": "always"
-          }
-        }
+            "enable": "always",
+          },
+        },
       },
       "binary": {
-        "path": "/opt/homebrew/opt/rustup/bin/rust-analyzer"
-      }
+        "path": "/Users/clayman/.rustup/toolchains/stable-aarch64-apple-darwin/bin/rust-analyzer",
+      },
     },
     "pyright": {
       "settings": {
         "python.analysis": {
           "diagnosticMode": "workspace",
           "typeCheckingMode": "strict",
-          "extraPaths": [".venv/lib/python3.13"]
-        }
-      }
-    }
-  }
+          "extraPaths": [".venv/lib/python3.13"],
+        },
+      },
+    },
+  },
 }
